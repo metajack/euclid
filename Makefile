@@ -1,12 +1,8 @@
 RUSTC ?= rustc
 
-SOURCES = $(find . -name '*.rs')
+all: librust-geom-851fed20-0.1.dylib
 
-all: librust-geom.dummy
+librust-geom-851fed20-0.1.dylib: lib.rs
+	@$(RUSTC) --dep-info --lib $<
 
-librust-geom.dummy: lib.rs $(SOURCES)
-	@$(RUSTC) --lib $<
-	@touch $@
-
-clean:
-	@rm -f *.so *.dylib *.dll
+-include lib.d

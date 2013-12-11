@@ -7,6 +7,8 @@
 // option. This file may not be copied, modified, or distributed
 // except according to those terms.
 
+#[pkgid="github.com/mozilla-servo/rust-geom#0.1"];
+
 extern mod extra;
 extern mod std;
 
@@ -23,4 +25,3 @@ pub mod point;
 pub mod rect;
 pub mod side_offsets;
 pub mod size;
-

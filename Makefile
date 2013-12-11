@@ -9,4 +9,4 @@ librust-geom.dummy: lib.rs $(SOURCES)
 	@touch $@
 
 clean:
-	@rm -f *.so *.dylib *.dll
+	@rm -f *.dummy *.so *.dylib *.dll

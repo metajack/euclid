@@ -1,8 +1,12 @@
+include rust.mk
+
 RUSTC ?= rustc
+RUSTFLAGS ?=
 
-all: librust-geom-851fed20-0.1.dylib
+.PHONY : all
+all: rust-geom
 
-librust-geom-851fed20-0.1.dylib: lib.rs
-	@$(RUSTC) --dep-info --lib $<
+.PHONY : check
+check: check-rust-geom
 
--include lib.d
+$(eval $(call RUST_CRATE, .))

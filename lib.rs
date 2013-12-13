@@ -9,8 +9,8 @@
 
 #[pkgid="github.com/mozilla-servo/rust-geom#0.1"];
 
-extern mod extra;
 extern mod std;
+extern mod extra;
 
 pub use matrix::Matrix4;
 pub use matrix2d::Matrix2D;

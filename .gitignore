@@ -2,5 +2,5 @@
 *.rlib
 *.so
 *.d
-rust-geom-test
+geom-test
 

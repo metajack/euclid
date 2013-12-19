@@ -4,9 +4,9 @@ RUSTC ?= rustc
 RUSTFLAGS ?=
 
 .PHONY : all
-all: rust-geom
+all : geom
 
 .PHONY : check
-check: check-rust-geom
+check : check-geom
 
 $(eval $(call RUST_CRATE, .))
